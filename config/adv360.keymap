@@ -21,7 +21,7 @@
             require-prior-idle-ms = <150>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
+            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 39 40 41 42 43 44 45 54 55 56 57 58 59 71 72 73 74 75>;
         };
 
         hmr: homerow_mods_right {
@@ -35,7 +35,7 @@
             require-prior-idle-ms = <150>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67 36>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 46 47 48 49 50 51 60 61 62 63 64>;
         };
     };
 
@@ -66,11 +66,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                                    &mo 3  &none       &none         &none         &none         &none     &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                     &none  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none             &kp LCTRL  &kp LALT    &kp LGUI   &kp RCTRL             &none  &kp EQUAL   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0    &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                &kp HOME    &kp PG_UP                               &none       &kp N7        &kp N8        &kp N9        &none     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                  &kp BSPC  &kp DEL    &kp END     &kp PG_DN  &kp ENTER  &kp KP_N0                     &kp UP        &kp DOWN      &kp KP_DOT    &kp RBKT  &mo 2
+&kp EQUAL  &kp N1     &kp N2        &kp N3          &kp N4     &kp N5  &trans                                                                    &mo 3  &none       &none         &none         &none         &none     &kp MINUS
+&kp TAB    &none      &none         &none           &none      &none   &none                                                                     &none  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none     &kp BSLH
+&kp ESC    &none      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none   &none             &kp LCTRL  &kp LALT    &kp LGUI   &kp RCTRL             &none  &kp EQUAL   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0    &kp SQT
+&kp LSHFT  &none      &none         &none           &none      &none                                &kp HOME    &kp PG_UP                               &none       &kp N7        &kp N8        &kp N9        &none     &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS      &kp LEFT        &kp RIGHT                  &kp BSPC  &kp DEL    &kp END     &kp PG_DN  &kp ENTER  &kp KP_N0                     &kp UP        &kp DOWN      &kp KP_DOT    &kp RBKT  &mo 2
             >;
         };
 
@@ -101,7 +101,7 @@
             bindings = <
 &kp EQUAL  &kp N1     &kp N2        &kp N3          &kp N4     &kp N5  &tog 1                                                                                                &mo 3  &kp N6  &kp N7          &kp N8          &kp N9           &kp N0      &kp MINUS
 &kp TAB    &none      &none         &none           &none      &none   &none                                                                                                 &none  &none   &kp LS(N8)      &kp UP_ARROW    &kp N            &kp LS(N5)  &kp BSLH
-&kp ESC    &none      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none   &none                    &kp LCTRL  &kp LALT             &kp LGUI             &kp F12                 &none  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &kp SQT
+&kp ESC    &none      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none   &none                    &kp LCTRL  &kp LALT             &kp LGUI             &kp F12                 &none  &kp V   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &kp SQT
 &kp LSHFT  &none      &none         &none           &none      &none                                       &kp HOME             &kp PG_UP                                           &none   &none           &none           &none            &none       &kp RSHFT
 &mo 2      &kp GRAVE  &kp TAB       &kp LEFT        &kp RIGHT                  &lt 4 BACKSPACE  &lt 1 DEL  &mt RIGHT_ALT END    &mt RCTRL PAGE_DOWN  &kp ENTER  &lt 0 SPACE                 &kp UP          &kp DOWN        &kp LBKT         &kp RBKT    &mo 2
             >;
