@@ -66,11 +66,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2           &kp N3             &kp N4        &kp N5  &tog 1                                                                                                &mo 3  &kp N6  &kp N7        &kp N8              &kp N9           &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W            &kp F              &kp P         &kp B   &none                                                                                                 &none  &kp J   &kp L         &kp U               &kp Y            &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G   &none                    &kp LCTRL  &kp LALT             &kp LGUI             &kp F12                 &none  &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &kp O          &kp SQT
-&kp LSHFT  &kp Z      &kp X            &kp C              &kp D         &kp V                                       &kp HOME             &kp PG_UP                                           &kp K   &kp H         &kp COMMA           &kp DOT          &kp FSLH       &kp RSHFT
-&mo 2      &kp GRAVE  &kp TAB          &kp LEFT           &kp RIGHT                     &lt 4 BACKSPACE  &lt 1 DEL  &mt RIGHT_ALT END    &mt RCTRL PAGE_DOWN  &kp ENTER  &lt 5 SPACE                 &kp UP        &kp DOWN            &kp LBKT         &kp RBKT       &mo 2
+&kp EQUAL  &kp N1     &kp N2           &kp N3             &kp N4        &kp N5  &tog 1                                                                                                    &mo 3  &kp N6  &kp N7        &kp N8              &kp N9           &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W            &kp F              &kp P         &kp B   &none                                                                                                     &none  &kp J   &kp L         &kp U               &kp Y            &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A      &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G   &none                        &kp LCTRL  &kp LALT             &kp LGUI             &kp F12                 &none  &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &kp O          &kp SQT
+&kp LSHFT  &kp Z      &kp X            &kp C              &kp D         &kp V                                           &kp HOME             &kp PG_UP                                           &kp K   &kp H         &kp COMMA           &kp DOT          &kp FSLH       &kp RSHFT
+&mo 2      &kp GRAVE  &kp TAB          &kp LEFT           &kp RIGHT                     &bspace 4 BACKSPACE  &lt 1 DEL  &mt RIGHT_ALT END    &mt RCTRL PAGE_DOWN  &kp ENTER  &lt 5 SPACE                 &kp UP        &kp DOWN            &kp LBKT         &kp RBKT       &mo 2
             >;
         };
 
