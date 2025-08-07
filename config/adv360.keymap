@@ -104,11 +104,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2        &kp N3          &kp N4     &kp N5  &trans                                                                    &mo 3  &none       &none         &none         &none         &none     &kp MINUS
-&kp TAB    &none      &none         &none           &none      &none   &none                                                                     &none  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none     &kp BSLH
-&kp ESC    &none      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none   &none             &kp LCTRL  &kp LALT    &kp LGUI   &kp RCTRL             &none  &kp EQUAL   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0    &kp SQT
-&kp LSHFT  &none      &none         &none           &none      &none                                &kp HOME    &kp PG_UP                               &none       &kp N7        &kp N8        &kp N9        &none     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS      &kp LEFT        &kp RIGHT                  &kp BSPC  &kp DEL    &kp END     &kp PG_DN  &kp ENTER  &kp KP_N0                     &kp UP        &kp DOWN      &kp KP_DOT    &kp RBKT  &mo 2
+&kp EQUAL  &kp N1     &kp N2        &kp N3          &kp N4     &kp N5  &trans                                                                    &mo 3  &none       &none         &none         &none         &none      &none
+&kp TAB    &none      &none         &none           &none      &none   &none                                                                     &none  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none
+&kp ESC    &none      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none   &none             &kp LCTRL  &kp LALT    &kp LGUI   &kp RCTRL             &none  &kp EQUAL   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0     &none
+&kp LSHFT  &none      &none         &none           &none      &none                                &kp HOME    &kp PG_UP                               &kp COMMA   &kp N7        &kp N8        &kp N9        &none      &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS      &kp LEFT        &kp RIGHT                  &kp BSPC  &kp DEL    &kp END     &kp PG_DN  &kp ENTER  &kp SPACE                     &none         &none         &none         &none      &mo 2
             >;
         };
 
@@ -137,11 +137,11 @@
         movement {
             display-name = "Movement";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2        &kp N3          &kp N4     &kp N5  &tog 1                                                                                                    &mo 3  &kp N6  &kp N7          &kp N8          &kp N9           &kp N0      &kp MINUS
-&kp TAB    &none      &none         &none           &none      &none   &none                                                                                                     &none  &none   &kp LS(N8)      &kp UP_ARROW    &kp N            &kp LS(N5)  &kp BSLH
-&kp ESC    &none      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none   &none                        &kp LCTRL  &kp LALT             &kp LGUI             &kp F12                 &none  &kp V   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &kp SQT
-&kp LSHFT  &none      &none         &none           &none      &none                                           &kp HOME             &kp PG_UP                                           &none   &none           &none           &none            &none       &kp RSHFT
-&mo 2      &kp GRAVE  &kp TAB       &kp LEFT        &kp RIGHT                  &bspace 4 BACKSPACE  &lt 1 DEL  &mt RIGHT_ALT END    &mt RCTRL PAGE_DOWN  &kp ENTER  &lt 0 SPACE                 &kp UP          &kp DOWN        &kp LBKT         &kp RBKT    &mo 2
+&kp EQUAL  &kp N1     &kp N2        &kp N3          &kp N4     &kp N5  &tog 1                                                                                                  &mo 3  &kp N6  &kp N7          &kp N8          &kp N9           &kp N0       &kp MINUS
+&kp TAB    &none      &none         &none           &none      &none   &none                                                                                                   &none  &none   &kp STAR        &kp UP_ARROW    &kp N            &kp PERCENT  &kp BSLH
+&kp ESC    &none      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none   &none                        &kp LCTRL  &kp LALT             &kp LGUI             &kp F12               &none  &kp V   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none        &kp SQT
+&kp LSHFT  &none      &none         &none           &none      &none                                           &kp HOME             &kp PG_UP                                         &none   &none           &none           &none            &none        &kp RSHFT
+&mo 2      &kp GRAVE  &kp TAB       &kp LEFT        &kp RIGHT                  &bspace 4 BACKSPACE  &lt 1 DEL  &mt RIGHT_ALT END    &mt RCTRL PAGE_DOWN  &kp ENTER  &kp SPACE                 &kp UP          &kp DOWN        &kp LBKT         &kp RBKT     &mo 2
             >;
         };
 
