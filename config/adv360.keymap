@@ -59,6 +59,32 @@
             key-positions = <41 42>;
             layers = <0>;
         };
+
+        vim_write_all_combo {
+            bindings = <&vim_write_all>;
+            key-positions = <18 17>;
+        };
+
+        vim_write_quit_combo {
+            bindings = <&vim_wite_quit>;
+            key-positions = <18 16>;
+        };
+    };
+
+    macros {
+        vim_write_all: vim_write_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp A &kp ENTER>;
+            label = "VIM_WRITE_ALL";
+        };
+
+        vim_wite_quit: vim_wite_quit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp Q &kp A &kp ENTER>;
+            label = "VIM_WITE_QUIT";
+        };
     };
 
     keymap {
