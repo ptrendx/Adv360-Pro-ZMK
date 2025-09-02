@@ -63,11 +63,25 @@
         vim_write_all_combo {
             bindings = <&vim_write_all>;
             key-positions = <18 17>;
+            layers = <0>;
         };
 
         vim_write_quit_combo {
             bindings = <&vim_wite_quit>;
             key-positions = <18 16>;
+            layers = <0>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <23 25>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <23 24>;
+            layers = <0>;
         };
     };
 
@@ -85,6 +99,13 @@
             bindings = <&kp ESCAPE &kp COLON &kp W &kp Q &kp A &kp ENTER>;
             label = "VIM_WITE_QUIT";
         };
+
+        plus_one: plus_one {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp PLUS &kp N1 &kp COLON>;
+            label = "PLUS_ONE";
+        };
     };
 
     keymap {
@@ -93,18 +114,18 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2           &kp N3             &kp N4        &kp N5  &tog 1                                                                                                    &mo 3  &kp N6  &kp N7        &kp N8              &kp N9           &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W            &kp F              &kp P         &kp B   &none                                                                                                     &none  &kp J   &kp L         &kp U               &kp Y            &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G   &none                        &kp LCTRL  &kp LALT             &kp LGUI             &kp F12                 &none  &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &kp O          &kp SQT
-&kp LSHFT  &kp Z      &kp X            &kp C              &kp D         &kp V                                           &kp HOME             &kp PG_UP                                           &kp K   &kp H         &kp COMMA           &kp DOT          &kp FSLH       &kp RSHFT
-&mo 2      &kp GRAVE  &kp TAB          &kp LEFT           &kp RIGHT                     &bspace 4 BACKSPACE  &lt 1 DEL  &mt RIGHT_ALT END    &mt RCTRL PAGE_DOWN  &kp ENTER  &lt 5 SPACE                 &kp UP        &kp DOWN            &kp LBKT         &kp RBKT       &to 6
+&kp EQUAL  &kp N1           &kp N2           &kp N3             &kp N4        &kp N5  &tog 1                                                                                                    &mo 3  &kp N6  &kp N7        &kp N8              &kp N9           &kp N0            &kp MINUS
+&kp TAB    &kp Q            &kp W            &kp F              &kp P         &kp B   &none                                                                                                     &none  &kp J   &kp L         &kp U               &kp Y            &kp SEMICOLON     &kp BSLH
+&kp ESC    &hml A LEFT_WIN  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G   &none                        &kp LCTRL  &kp LALT             &kp LGUI             &kp F12                 &none  &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &hmr O RIGHT_GUI  &kp SQT
+&kp LSHFT  &kp Z            &kp X            &kp C              &kp D         &kp V                                           &kp HOME             &kp PG_UP                                           &kp K   &kp H         &kp COMMA           &kp DOT          &kp FSLH          &kp RSHFT
+&mo 2      &kp GRAVE        &kp TAB          &kp LEFT           &kp RIGHT                     &bspace 4 BACKSPACE  &lt 1 DEL  &mt RIGHT_ALT END    &mt RCTRL PAGE_DOWN  &kp ENTER  &lt 5 SPACE                 &kp UP        &kp DOWN            &kp LBKT         &kp RBKT          &to 6
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2        &kp N3          &kp N4     &kp N5  &trans                                                                    &mo 3  &none       &none         &none         &none         &none      &none
+&kp EQUAL  &kp N1     &kp N2        &kp N3          &kp N4     &kp N5  &trans                                                                    &mo 3  &none       &plus_one     &none         &none         &none      &none
 &kp TAB    &none      &none         &none           &none      &none   &none                                                                     &none  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none
 &kp ESC    &none      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none   &none             &kp LCTRL  &kp LALT    &kp LGUI   &kp RCTRL             &none  &kp EQUAL   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0     &none
 &kp LSHFT  &none      &none         &none           &none      &none                                &kp HOME    &kp PG_UP                               &kp COMMA   &kp N7        &kp N8        &kp N9        &none      &kp RSHFT
@@ -147,11 +168,11 @@
 
         layer_8 {
             bindings = <
-&trans  &trans    &trans                &trans         &trans                 &trans         &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp STAR  &kp LS(LEFT_BRACKET)  &kp LS(EQUAL)  &kp LS(RIGHT_BRACKET)  &none          &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp HASH  &kp LS(N9)            &kp EQUAL      &kp LS(N0)             &kp SEMICOLON  &trans          &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp AMPS  &kp LEFT_BRACKET      &kp MINUS      &kp RIGHT_BRACKET      &none                                  &trans    &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none     &none                 &none          &none                                         &trans  &trans  &trans    &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans                &trans         &trans                 &trans            &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp STAR  &kp LS(LEFT_BRACKET)  &kp LS(EQUAL)  &kp LS(RIGHT_BRACKET)  &none             &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp HASH  &kp LS(N9)            &kp EQUAL      &kp LS(N0)             &kp SEMICOLON     &trans          &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp AMPS  &kp LEFT_BRACKET      &kp MINUS      &kp RIGHT_BRACKET      &kp GREATER_THAN                          &trans    &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none     &none                 &none          &none                                            &trans  &trans  &trans    &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
