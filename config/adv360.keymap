@@ -73,7 +73,7 @@
         };
 
         caps {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&kp RS(CAPSLOCK)>;
             key-positions = <23 25>;
             layers = <0>;
         };
