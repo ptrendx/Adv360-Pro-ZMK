@@ -63,13 +63,13 @@
         vim_write_all_combo {
             bindings = <&vim_write_all>;
             key-positions = <18 17>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         vim_write_quit_combo {
             bindings = <&vim_wite_quit>;
             key-positions = <18 16>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         caps {
