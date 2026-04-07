@@ -114,11 +114,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&to 0          &to 4            &kp N2           &kp N3             &kp N4        &kp N5  &tog 1                                                                                              &mo 3  &kp N6  &kp N7        &kp N8              &kp N9            &kp N0            &kp MINUS
-&kp TAB        &kp Q            &kp W            &kp F              &kp P         &kp B   &none                                                                                               &none  &kp J   &kp L         &kp U               &kp Y             &kp SEMICOLON     &kp BSLH
-&kp ESC        &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G   &none          &kp LCTRL  &kp DELETE           &kp LGUI                 &kp F12                     &none  &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SQT
-&kp BACKSPACE  &kp Z            &kp X            &kp C              &kp D         &kp V                             &kp HOME             &kp PG_UP                                                   &kp K   &kp H         &kp COMMA           &kp DOT           &kp FSLH          &kp RSHFT
-&mo 2          &kp GRAVE        &kp TAB          &kp LEFT           &kp RIGHT                     &mo 4  &mo 1      &mt RIGHT_ALT END    &mt RIGHT_ALT PAGE_DOWN  &kp ENTER  &bspace 5 SPACE                 &kp UP        &kp DOWN            &kp LBKT          &kp RBKT          &to 6
+&to 0          &to 4            &kp N2           &kp N3             &kp N4        &kp N5  &tog 1                                                                                                            &mo 3  &kp N6  &kp N7        &kp N8              &kp N9            &kp N0            &kp MINUS
+&kp TAB        &kp Q            &kp W            &kp F              &kp P         &kp B   &none                                                                                                             &none  &kp J   &kp L         &kp U               &kp Y             &kp SEMICOLON     &kp BSLH
+&kp ESC        &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G   &none                        &kp LCTRL  &kp DELETE           &kp LGUI                 &kp F12                     &none  &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SQT
+&kp BACKSPACE  &kp Z            &kp X            &kp C              &kp D         &kp V                                           &kp HOME             &kp PG_UP                                                   &kp K   &kp H         &kp COMMA           &kp DOT           &kp FSLH          &kp RSHFT
+&mo 2          &kp GRAVE        &kp TAB          &kp LEFT           &kp RIGHT                     &bspace 4 BACKSPACE  &mo 1      &mt RIGHT_ALT END    &mt RIGHT_ALT PAGE_DOWN  &kp ENTER  &bspace 5 SPACE                 &kp UP        &kp DOWN            &kp LBKT          &kp RBKT          &to 6
             >;
         };
 
